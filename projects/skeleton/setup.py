@@ -1,6 +1,6 @@
 try:
     from setuptools import setup
-exepct ImportError:
+except ImportError:
     from distutils.core import setup
 
 config =[

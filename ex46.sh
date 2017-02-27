@@ -15,7 +15,7 @@ if [ -d "projects/skeleton/"  ]; then
 cat << [EOF] >> projects/skeleton/setup.py
 try:
     from setuptools import setup
-exepct ImportError:
+except ImportError:
     from distutils.core import setup
 
 config =[
