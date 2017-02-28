@@ -3,11 +3,11 @@ from ex47.game import Room
 
 
 def test_room():
-    gold = Room("GooldRoom",
+    gold = Room("GoldRoom",
                 """This room has gold in it  you can grab. There's a
                 door to the north.""")
     assert_equal(gold.name, "GoldRoom")
-    assert_equal(gold.paths, [])
+    assert_equal(gold.paths, {})
 
 
 def test_room_paths():
