@@ -46,7 +46,7 @@ def test_numbers():
     result = lexicon.scan("3 91234")
     assert_equal(result, [
         ('number', 3),
-        ('number, 91234')
+        ('number', 91234)
         ])
 
 
