@@ -15,7 +15,7 @@ def convert_number(s):
 
 def scan(input_string):
     words = input_string.split()
-    sentence = []
+    word_list = []
     for word in words:
         if word in directions:
             token = 'direction'
@@ -30,6 +30,6 @@ def scan(input_string):
             word = convert_number(word) # this is inefficient, calling convert_number twice
         else:
             token = 'error'
-        sentence.append((token, word))
-    return sentence
+        word_list.append((token, word))
+    return word_list
 
